@@ -1,0 +1,98 @@
+/* This file is used to style index.html */ 
+
+hr + footer {
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+}
+
+h2{
+    color: rgba(5, 47, 65, 0.631);
+    background-color: #E9E098;
+    text-align: center;
+    border-width: 2mm;
+    border-radius: 15px;
+    padding: 10pt 0pt 10pt 0pt;
+}
+
+h3 {
+    text-decoration: underline;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+    text-align: left;
+  }
+
+ul:hover {
+    font-style: oblique;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+#firstImage{
+    border: 5px solid rgba(5, 47, 65, 0.631);
+    border-radius: 3em;
+    padding: 5px;
+    height: 200px;
+    width: 500px
+}
+
+#secondImage{
+    border-width: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    height: 250px;
+    width: 400px
+}
+
+#nav{
+    position: sticky;
+    border-color: lightskyblue;
+    background-color: lightgray;
+    border-style: solid;
+    border-width: .15cm;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 250px 250px 200px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 5%;
+    align-items: left;
+}
+
+.definition{
+    border-color: blanchedalmond;
+    background-color: lightpink;
+}
+
+.audio{
+    background-color: gray;
+}
+.SubmissionButton:active{
+    background-color: hsl(180, 8%, 69%);
+}
+
+.checked{
+    background-color: lightgreen;
+    width: 50px;
+    height: 24px;
+}
