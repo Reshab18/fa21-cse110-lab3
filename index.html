@@ -8,249 +8,264 @@
     <title>Lab2</title>
     <meta name="description" content="Meeting minutes for Math103A">
     <link rel="icon" href="https://imports.ucsd.edu/media/favicons/favicon.ico">
-
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            background-color: linen;
+        }
+    </style>
 </head>
 
 <body>
+    </head>
 
-    <header class="page-header">
-        <h1>Math 103A</h1>
-        <img src="Images/Math.jpg" alt="Mathematics clipart">
-    </header>
+    <body>
 
-    <main>
-        <nav>
-            <ul>
-                <li><a href="#attendance">Attendace List</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#uncovered_last">Uncovered material from last week</a></li>
-                <li><a href="#uncovered_new">New material</a></li>
-                <li><a href="#questions">Questions and Concerns</a></li>
-                <li><a href="#entertainment">Entertainment</a></li>
-                <li><a href="#form">Form</a></li>
-            </ul>
-        </nav>
+        <header class="page-header">
+            <h1 style="color:rgb(70, 70, 167);text-align:center;">Math 103A</h1>
+            <img id="firstImage" src="Images/Math.jpg" alt="Mathematics clipart">
+        </header>
 
-        <section>
-            <h2><em>Important Note</em></h2>
-            <strong>The homework should be written based on your understanding but working with someone is fine.</strong>
-        </section>
+        <main>
+            <h2>Navigation links</h2>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#attendance">Attendace List</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#uncovered_last">Uncovered material from last week</a></li>
+                    <li><a href="#uncovered_new">New material</a></li>
+                    <li><a href="#questions">Questions and Concerns</a></li>
+                    <li><a href="#entertainment">Entertainment</a></li>
+                    <li><a href="#form">Form</a></li>
+                </ul>
+            </nav>
 
-
-        <section id="attendance">
-            <h2>Attendace List</h2>
-            <h3>Date: October 3, 2021</h3>
-            <ul>
-                <li class="checked">Daniel</li>
-                <li>Lucas</li>
-                <li class="checked">John</li>
-                <li class="checked">George</li>
-            </ul>
-        </section>
-
-        <section id="agenda">
-            <h2>Agenda</h2>
-            <ol>
-                <li>Review lecture notes and definitions from book </li>
-                <li>Go over exercises from the book</li>
-                <li>Clarify any question and doubts</li>
-            </ol>
-        </section>
-
-        <section id="uncovered_last">
-            <h2>Uncovered material from last week</h2>
-            <p>
-                <b>What is a binary operator?</b><br>
-                "A <span class="definition"><i>binary operation</i></span> * on a set S is a function mapping S x S into
-                S.
-                For each (a, b) E S x S, we will denote the element *((a, b)) of S by a* b.<br>
-                Intuitively, we may regard a <i>binary operation</i> * on S as assigning, to each ordered pair (a, b)
-                ofelements of S, an element a * b of S.<br>
-                Binary refers to the fact that we are mapping pairs of elements from S into S."(Section1, Pg 11)
-            </p>
-            <div class="mapping">
-                <img src="Images/Binary_Operator.PNG" alt="Mapping of a binary opertor">
-            </div>
+            <section clsss="Note">
+                <h2><em>Important Note</em></h2>
+                <strong>The homework should be written based on your understanding but working with someone is
+                    fine.</strong>
+            </section>
 
 
-            <hr>
+            <section id="attendance">
+                <h2>Attendace List</h2>
+                <h3>Date: October 3, 2021</h3>
+                <ul>
+                    <li class="checked">Daniel</li>
+                    <li>Lucas</li>
+                    <li class="checked">John</li>
+                    <li class="checked">George</li>
+                </ul>
+            </section>
 
-            <i><u>Examples:</u></i><br>
-            <p><em>Note: </em>Suppose we wish to consider an expression of the form a * b * c. A binary operation *
-                enables us to combine only two elements, and here we have three.</p>
-            <ol>
-                <li> "Our usual addition + is an operation on the set R" (Section1, Pg 11)</li>
-                <li> "Let M(R) be the set of all matricest with real entries. The usual matrix addition + is
-                    not an operation on this set since A + B is not defined for an ordered pair (A, B) of
-                    matrices having different numbers of rows or of columns."(Section1, Pg 12)</li>
-            </ol>
-        </section>
+            <section id="agenda">
+                <h2>Agenda</h2>
+                <ol>
+                    <li>Review lecture notes and definitions from book </li>
+                    <li>Go over exercises from the book</li>
+                    <li>Clarify any question and doubts</li>
+                </ol>
+            </section>
 
-        <section id="uncovered_new">
-            <h2>New material</h2>
-            <p>
-                <b>What is an identity element></b><br>
-                "Let S be a set with <i>binary operation</i> *· If e E S has the property that for all a E S,
-                a * e = e *a = a, then e is called an <span class="definition"><i>identity element</i></span> for
-                *·"(Section1, Pg 14)<br>
-                <b>What is an inverse?</b><br>
-                "If* is an operation on the set S and S has an <i>identity element</i> e, then for any x ES, the <span
-                    class="definition"><i>inverse</i></span>of x is an element x' such that x * x' = x' * x =
-                e."(Section1, Pg
-                13)<br>
-
-                <b>When is * consider commuative?</b><br>
-                "An operation * on a set S is commutative if (and only if) a * b = b *a for all
-                a,b in S."(Section1, Pg 13)
-            </p>
-            <details>
-                <summary>Details</summary>
-                As was pointed out in Section 0, it is customary in mathematics to omit the words
-                and only if from a definition. Definitions are always understood to be if and only if
-                statements. Theorems are not always if and only if statements, and no such convention
-                is ever used for theorems.
-            </details>
-
-            <hr>
-
-            <p><i><u>Examples:</u></i><br></p>
-            <ol>
-                <li> The indetity element for addition is 0 i.e a + 0 = a where a is an element of real numbers. </li>
-                <li> The inverse for addition is usually the opposite of a given number i.e a + (-a) = 0 where is an
-                    element of real numbers.</li>
-            </ol>
-        </section>
-
-        <section id="questions">
-            <h2>Questions and Concerns</h2>
-            <ul>
-                <li>When are homework assignments due?
-                    <ul>
-                        <li>Assignments are due on Monday's by 11:59pm.</li>
-                    </ul>
-                </li>
-
-                <li>How are we turning in the homework?
-
-                    <ul>
-                        <li>Homework assignmnets should be turned in person, both typed and handwritten is accepet.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <section id="uncovered_last">
+                <h2>Uncovered material from last week</h2>
+                <p>
+                    <b>What is a binary operator?</b><br>
+                    "A <span class="definition"><i>binary operation</i></span> * on a set S is a function mapping S x S
+                    into
+                    S.
+                    For each (a, b) E S x S, we will denote the element *((a, b)) of S by a* b.<br>
+                    Intuitively, we may regard a <i>binary operation</i> * on S as assigning, to each ordered pair (a,
+                    b)
+                    ofelements of S, an element a * b of S.<br>
+                    Binary refers to the fact that we are mapping pairs of elements from S into S."(Section1, Pg 11)
+                </p>
+                <div class="mapping">
+                    <img src="Images/Binary_Operator.PNG" alt="Mapping of a binary opertor">
+                </div>
 
 
-        <section id="entertainment">
-            <h2>Entertainment</h2>
-            <div>
-                Video by <a href="https://www.pexels.com/videos/">Pexels</a><br>
-                <video controls width="250" height="250">
-                    <source src="/Videos/video.mp4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-            </div>
-            <div>Music by <a href="https://www.bensound.com/">Bensound</a><br>
-                <audio controls src="/Audio/bensound.mp3">
-                    Your browser does not support the
-                    <code>audio</code> element.
-                </audio>
-            </div>
+                <hr>
 
-            A meme for you:<br>
-            <img src="Images/meme.PNG" alt="meme" width="300" height="250">
+                <i><u>Examples:</u></i><br>
+                <p><em>Note: </em>Suppose we wish to consider an expression of the form a * b * c. A binary operation *
+                    enables us to combine only two elements, and here we have three.</p>
+                <ol>
+                    <li> "Our usual addition + is an operation on the set R" (Section1, Pg 11)</li>
+                    <li> "Let M(R) be the set of all matricest with real entries. The usual matrix addition + is
+                        not an operation on this set since A + B is not defined for an ordered pair (A, B) of
+                        matrices having different numbers of rows or of columns."(Section1, Pg 12)</li>
+                </ol>
+            </section>
 
-        </section>
-    </main>
+            <section id="uncovered_new">
+                <h2>New material</h2>
+                <p>
+                    <b>What is an identity element></b><br>
+                    "Let S be a set with <i>binary operation</i> *· If e E S has the property that for all a E S,
+                    a * e = e *a = a, then e is called an <span class="definition"><i>identity element</i></span> for
+                    *·"(Section1, Pg 14)<br>
+                    <b>What is an inverse?</b><br>
+                    "If* is an operation on the set S and S has an <i>identity element</i> e, then for any x ES, the
+                    <span class="definition"><i>inverse</i></span>of x is an element x' such that x * x' = x' * x =
+                    e."(Section1, Pg
+                    13)<br>
+
+                    <b>When is * consider commuative?</b><br>
+                    "An operation * on a set S is commutative if (and only if) a * b = b *a for all
+                    a,b in S."(Section1, Pg 13)
+                </p>
+                <details>
+                    <summary>Details</summary>
+                    As was pointed out in Section 0, it is customary in mathematics to omit the words
+                    and only if from a definition. Definitions are always understood to be if and only if
+                    statements. Theorems are not always if and only if statements, and no such convention
+                    is ever used for theorems.
+                </details>
+
+                <hr>
+
+                <p><i><u>Examples:</u></i><br></p>
+                <ol>
+                    <li> The indetity element for addition is 0 i.e a + 0 = a where a is an element of real numbers.
+                    </li>
+                    <li> The inverse for addition is usually the opposite of a given number i.e a + (-a) = 0 where is an
+                        element of real numbers.</li>
+                </ol>
+            </section>
+
+            <section id="questions">
+                <h2>Questions and Concerns</h2>
+                <ul>
+                    <li>When are homework assignments due?
+                        <ul>
+                            <li>Assignments are due on Monday's by 11:59pm.</li>
+                        </ul>
+                    </li>
+
+                    <li>How are we turning in the homework?
+
+                        <ul>
+                            <li>Homework assignmnets should be turned in person, both typed and handwritten is accepet.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
 
-    <section id="form">
-        <h2>Form</h2>
+            <section id="entertainment">
+                <h2>Entertainment</h2>
+                <div id="video">
+                    Video by <a href="https://www.pexels.com/videos/">Pexels</a><br>
+                    <video controls width="250" height="250">
+                        <source src="/Videos/video.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
+                <div id="audio">Music by <a href="https://www.bensound.com/">Bensound</a><br>
+                    <audio controls src="/Audio/bensound.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </div>
 
-        <form action="https://httpbin.org/get" method="get">
-            <div>
-                <label for="name">Enter your name: </label>
-                <input type="text" name="name" id="name" required>
-            </div>
+                A meme for you:<br>
+                <img id="secondImage" src="Images/meme.PNG" alt="meme" width="300" height="250">
 
-            <p>Choose where you currently reside:</p>
+            </section>
+        </main>
 
-            <div>
-                <input type="checkbox" id="on-campus" name="on-campus">
-                <label for="on-campus">on-campus</label>
 
-                <input type="checkbox" id="off-campus" name="off-campus">
-                <label for="off-campus">off-campus</label><br>
-            </div>
+        <section class="form">
+            <h2>Form</h2>
 
-            <br>
-            <fieldset>
-                What is your school year?<br>
+            <form action="https://httpbin.org/get" method="get">
+                <div>
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
 
-                <input type="radio" id="freshmen" name="schoolyear">
-                <label for="freshmen">freshmen</label><br />
+                <p>Choose where you currently reside:</p>
 
-                <input type="radio" id="sophomore" name="schoolyear">
-                <label for="sophomore">sophomore</label><br />
+                <div>
+                    <input type="checkbox" id="on-campus" name="on-campus">
+                    <label for="on-campus">on-campus</label>
 
-                <input type="radio" id="junior" name="schoolyear">
-                <label for="junior">junior</label><br />
+                    <input type="checkbox" id="off-campus" name="off-campus">
+                    <label for="off-campus">off-campus</label><br>
+                </div>
 
-                <input type="radio" id="senior" name="schoolyear">
-                <label for="senior">senior</label><br />
-            </fieldset>
+                <br>
+                <fieldset>
+                    What is your school year?<br>
 
-            <div>
-                <label for="fun-fact">Tell us a fun fact about you:</label><br>
+                    <input type="radio" id="freshmen" name="schoolyear">
+                    <label for="freshmen">freshmen</label><br />
 
-                <textarea id="fun-fact" name="fun-fact" rows="5" cols="25">
+                    <input type="radio" id="sophomore" name="schoolyear">
+                    <label for="sophomore">sophomore</label><br />
+
+                    <input type="radio" id="junior" name="schoolyear">
+                    <label for="junior">junior</label><br />
+
+                    <input type="radio" id="senior" name="schoolyear">
+                    <label for="senior">senior</label><br />
+                </fieldset>
+
+                <div>
+                    <label for="fun-fact">Tell us a fun fact about you:</label><br>
+
+                    <textarea id="fun-fact" name="fun-fact" rows="5" cols="25">
                 </textarea>
-            </div>
+                </div>
 
 
-            <div>
-                <label for="favoriteColor">Your favorite color:</label>
-                <input list="colors" id="favoriteColor" name="favoriteColor" />
+                <div>
+                    <label for="favoriteColor">Your favorite color:</label>
+                    <input list="colors" id="favoriteColor" name="favoriteColor" />
 
-                <datalist id="colors">
-                    <option value="Red">
-                    <option value="Yellow">
-                    <option value="Green">
-                    <option value="Blue">
-                    <option value="Pink">
-                </datalist>
-            </div>
+                    <datalist id="colors">
+                        <option value="Red">
+                        <option value="Yellow">
+                        <option value="Green">
+                        <option value="Blue">
+                        <option value="Pink">
+                    </datalist>
+                </div>
 
-            <div>
-                <label for="GraduationYear">Choose your anticipated Graduation year:</label>
-                <select name="year" id="GraduationYear">
-                    <option value="">--Please choose an option--</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                </select>
-            </div>
+                <div>
+                    <label for="GraduationYear">Choose your anticipated Graduation year:</label>
+                    <select name="year" id="GraduationYear">
+                        <option value="">--Please choose an option--</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
 
-            <div>
-                <label for="Today'sDate">Today's date:</label>
-                <input type="date" id="Today'sDate" name="Today'sDate" value="2021-10-03">
-            </div>
+                <div>
+                    <label for="Today'sDate">Today's date:</label>
+                    <input type="date" id="Today'sDate" name="Today'sDate" value="2021-10-03">
+                </div>
 
-            <button class="SubmissionButton" type="submit">
-                Submit
-            </button>
-            <br>
-        </form>
-    </section>
+                <button class="SubmissionButton" type="submit">
+                    Submit
+                </button>
+                <br>
+            </form>
+        </section>
 
-    <br>
-    <footer>Book used J. Fraleigh, N. Brand, A First Course in Abstract Algebra, 8th edition, Pearson, 2021.<br>
-        For questions contact: <a href="mailto:remehta@ucsd.edu">Reshab Mehta<br></a>
-        Thanks for visiting!!!
-    </footer>
+        <br>
+        <footer id="grid">Book used J. Fraleigh, N. Brand, A First Course in Abstract Algebra, 8th edition, Pearson,
+            2021.<br>
+            <diV>For questions contact: <a href="mailto:remehta@ucsd.edu">Reshab Mehta<br></a>
+            </diV>
+        </footer>
 
-</body>
+    </body>
 
 </html>
